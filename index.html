@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <title> document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <style> 
-        div {
-            border-style: solid;
-            border-color: black;
-            }
-        </style>
 </head>
-<body>
+<body class="container">
 
+    <nav class="navbar navbar-expand-sm vavbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">AmyTisdell</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-control="navbarNavDropdown" aria-expanded="true" aria-label="toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown"> 
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="page2.html">About Me</a>
+                </li>
+                <li class="nav-item dropdown"> 
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                Let's connect!
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+                    <a class="dropdown-item" href="#">GitHub</a>
+                    <a class="dropdown-item" href="#">LinkedIn</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <script src="node_modules/jquery/dist/jquery.js"> </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
