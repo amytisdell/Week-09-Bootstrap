@@ -6,17 +6,16 @@
     <title> document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<body class="container" >
 
-    <nav class="navbar navbar-expand-sm vavbar-dark bg-dark" >
+
+<body class="container">
+    <nav class="navbar navbar-expand-md vavbar-dark bg-dark">
+        <div class="container-fluid">
         <a class="navbar-brand" href="index.html">Amy Tisdell</a>
-
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
-        aria-control="navbarNavDropdown" aria-expanded="true" aria-label="toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="toggle navigation">
+        <span class="navbar-toggler-icon"></span> 
         </button>
-        
-        
         <div class="collapse navbar-collapse"  id="navbarNavDropdown"> 
             <ul class="navbar-nav">
                 <li class="nav-item active">
@@ -31,11 +30,15 @@
                     <a class="dropdown-item" href="links/link.jpeg">Click for a surprise</a>
                     <a class="dropdown-item" href="links/link2.jpeg">Click for another surprise</a>
                     <a class="dropdown-item" href="links/link1.jpeg">You know you want to click!</a>
-                </div>
                 </li>
+            </div>
             </ul>
         </div>
     </nav>
+  
+  
+  
+  
     <P> 
     Thanks for visiting my website! If you've enjoyed, leave a comment below. 
     </P>
@@ -44,15 +47,12 @@
     </P>
     <div class="form-floating">
     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-    <br>
-    <button id="comment submit"> <!--I would use the ID selector here to have JavaScript collect the input in the 
-    comment form and collect it--> 
-    submit
+    <button class="btn btn-primary" id="comment submit"> Submit </button> 
+    <!--I would use the ID selector here to have JavaScript collect the input in the comment form and collect it--> 
+    <!-- thank you for reccomending the bootstrap button Kristina! There's so much to explore in Bootstrap!-->
     </button>
   </div>
-
   <script src="node_modules/jquery/dist/jquery.js"> </script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
 </body>
 </html>
